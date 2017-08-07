@@ -58,7 +58,7 @@ int main()
             //Sequencia de letras
             if(lt==1 && Alt==0) {words++;} //Verifica se a letra atual faz parte da palavra atual ou se é nova palavra
 
-
+            //sequencia de numeros inteiros
             if(num==1 && Anum==0 && Asep==1) {words++;}
 
             //numeros decimais
