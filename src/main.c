@@ -46,15 +46,8 @@ int main()
 
         //Significado da entrada
 
-
-
         if(!sep) //executa sempre que nao for um separador
         {
-            //Sequencia de letras e números
-            //if((lt==1 || num==1) && (Alt==0 && Anum==0) && Acm==0 && Apt==0 &&  ) {words++;}//Verifica se a letra/número atual faz parte da palavra atual ou se é nova palavra
-
-            //printf("lt: %d\nnum: %d\nAlt: %d\nAnum: %d\n", lt, num, Alt, Anum);
-
             //Sequencia de letras
             if(lt==1 && Alt==0) {words++;} //Verifica se a letra atual faz parte da palavra atual ou se é nova palavra
 
@@ -65,17 +58,7 @@ int main()
             if( num==1 && Asep==0 && Anum==0 && Acm==0 && Apt==0) {words++;}
                 //somente atualiza words se esse número nao tiver sido precedido
                 //por um separador, número, virgula ou ponto.
-
-/*
-            printf("\nCaractere: %c\n", c);
-
-            printf("\nsep: %d \nnum: %d \ncm: %d \npt: %d \nlt: %d \n ", sep, num, cm, pt, lt);
-
-            printf("\nAsep: %d \nAnum: %d \nAcm: %d \nApt: %d \nAlt: %d \n ", Asep, Anum, Acm, Apt, Alt);
-            printf("\nwords: %d\n", words);
-
-*/
-
+                
         }
 
 
@@ -94,6 +77,5 @@ int main()
     printf("%d\n", words);
 
     return 0;
-
+    
 }
-
